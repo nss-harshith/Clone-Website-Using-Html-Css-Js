@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-image: url("login.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        div{
+            position: relative;
+            width: 320px;
+            height: 400px;
+            float: right;
+            margin-top: 5%;
+            margin-right: 15%;
+            background-color: rgba(243, 247, 251, 0.9);
+            border-radius: 10px;
+        }
+        .form{
+            margin: 20px 20px;
+           
+        }
+        input[type="text"], input[type="password"]{
+            height: 30px;
+            width: 270px;
+        }
+        button{
+            width: 276px;
+            height: 30px;
+            background-color: rgba(17, 80, 148, 0.9);
+        }
+        b{
+            text-align: center;
+        }
+        a{
+            text-decoration: underline;
+            padding-top: 5px;
+        }
+        .foa{
+            padding-left: 25px;
+        }
+        .foa,.foa1{
+            font-size: 15px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="login.jsp" method="post" class="form">
+            <img src="log.png" alt="pima" style="width: 276px;">
+            <label for="username">Username:</label><br>
+            <input type="text" name="unam" required><br>
+            <label for="password">password:</label><br>
+            <input type="password" name="pass" required><br/><br>
+            <button type="submit">Login</button><br><br>
+            <b>New to MyPima? <a href="active.html" style="text-decoration: underline; color: black;">Ativate your account</a></b><br><br/>
+            <a class="foa1">Forgot Username?</a><a class="foa">Forgot Password?</a><br><br/>
+            <a class="foa1">Contact MyPima Help Desk / FAQ</a>
+        </form>
+    </div>
+</body>
+
+</html>

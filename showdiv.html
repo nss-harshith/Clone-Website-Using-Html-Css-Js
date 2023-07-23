@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Style the buttons */
+        button {
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        /* Style the divs */
+        div {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button class="spa" id="Whats">what"s happening</button>
+        <button class="spa1" id="datekn">dates to know</button>
+    </div>
+
+
+    <div id="whcon" style="display: inline-block">
+        <a class="element1">National CTE Letter of Intent Signing Day April 20</a>
+        <a class="element2"> Annual Rhodes day car show, APril 22</a>
+        <a class="element3">Focus on your future Hiring and Networking Event, April 20</a>
+        <a class="element4">Learn more about pima's responses to the covid-19 pandemic</a>
+        <a class="element5">all news<span>&#10095;</span></a>
+    </div>
+
+    <div id="datk" style="display:none">
+        <a class="elemen1">National CTE Letter of Intent Signing Day April 20</a>
+        <a class="elemen2"> Annual Rhodes day car show, APril 22</a>
+        <a class="elemen3">Focus on your future Hiring and Networking Event, April 20</a>
+    </div>
+
+
+    <script>
+
+        const button2 = document.getElementById('datekn');
+        const button1 = document.getElementById('Whats');
+
+        const div1 = document.getElementById('whcon');
+        const div2 = document.getElementById('datk');
+
+        button1.addEventListener('click', () => {
+
+            div1.style.display = 'block';
+            div2.style.display = 'none';
+        });
+
+        button2.addEventListener('click', () => {
+
+            div1.style.display = 'none';
+            div2.style.display = 'block';
+        });
+
+    </script>
+</body>
+
+</html>
